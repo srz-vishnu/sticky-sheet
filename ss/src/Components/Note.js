@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { getNoteInfo } from '../redux/Note/noteAction'
 import { MdDeleteForever } from 'react-icons/md';
+import Addnote from './Addnote';
 //import { delNoteInfo } from '../redux/Note/noteActions'
 //import { Link } from 'react-router-dom'
 //import './geet.css'
@@ -44,8 +45,9 @@ props.getNoteInfo()
 
                             )})}
                        {/* </table> */}
-
+                       <Addnote />
     </div>
+    
   )
 }
 

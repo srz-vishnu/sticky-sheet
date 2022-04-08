@@ -9,10 +9,10 @@ const initialState = {
         note: action.noteInfo
       }
 
-    //   case "POST_NOTE_INFO_SUCCESS": return{
-    //     ...state,
-    //     note:[...state.note, action.noteInfo]
-    // }
+      case "POST_NOTE_INFO_SUCCESS": return{
+        ...state,
+        note:[...state.note, action.noteInfo]
+    }
   
       default: return state
     }

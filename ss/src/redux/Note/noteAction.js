@@ -5,7 +5,7 @@ export const getNoteInfo = () => {
   }
 
 
-  const postNoteInfo = (note) => {
+  export const postNoteInfo = (note) => {
     return{
         type: "POST_NOTE_INFO",
         payload: note,

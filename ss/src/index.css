@@ -52,6 +52,7 @@ textarea {
 	border: none;
 	resize: none;
 	background-color: #67d7cc;
+	
 }
 
 textarea:focus {
@@ -110,4 +111,7 @@ textarea:focus {
 
 .search input:focus {
 	outline: none;
+}
+input{
+ display: none;
 }

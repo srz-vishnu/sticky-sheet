@@ -22,20 +22,20 @@ function* getNoteSaga(){
 
 //post code added to get code
 
-// function* postNoteSaga (action) {
-//   try{
-//       const udata = action.payload;
-//       const res = yield call(axios.post,"http://localhost:8000/notes",udata);      
-//       console.log("output", res)
-//       yield put({type:"POST_NOTE_INFO",noteInfo : res.data});
-//     }
-//     catch (e) { console.log('error',e) }
-// }
+function* postNoteSaga (action) {
+  try{
+      const udata = action.payload;
+      const res = yield call(axios.post,"http://localhost:8000/notes",udata);      
+      console.log("output", res)
+      yield put({type:"POST_NOTE_INFO",noteInfo : res.data});
+    }
+    catch (e) { console.log('error',e) }
+}
 
 
 
 export function* watchNoteContainer(){
     yield takeEvery("GET_NOTE_INFO",getNoteSaga)
-    // yield takeEvery("POST_NOTE_INFO", postNoteSaga)
+     yield takeEvery("POST_NOTE_INFO", postNoteSaga)
 
 }

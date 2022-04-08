@@ -1,24 +1,22 @@
 {
-    "notes": [
-        {
-            "id":1,
-            "text":"hiiiiiiiii",
-            "date":"22/04/2022",
-            "username":"vk"
-        },
-
-        {
-            "id": 1,
-            "text": "hiiiiiiiii",
-            "date": "22/04/2022",
-            "username": "vk"
-          },
-
-        {
-            "id":2,
-            "text":"hiiiggggggiiiiii",
-            "date":"22/04/2022",
-            "username":"vllk"
-        }
-    ]
+  "notes": [
+    {
+      "id": 1,
+      "text": "hiiiiiiiii",
+      "date": "22/04/2022",
+      "username": "vk"
+    },
+    {
+      "text": "new note",
+      "date": "",
+      "username": "vk",
+      "id": 2
+    },
+    {
+      "text": "new new new\ndoed\nkki",
+      "date": "",
+      "username": "vk",
+      "id": 3
+    }
+  ]
 }

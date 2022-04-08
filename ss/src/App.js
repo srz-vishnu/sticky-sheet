@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import Note from './Components/Note'
-//import Addnote from './Components/Addnote'
+import Addnote from './Components/Addnote'
 function App() {
   return (
     <Provider store={store}>
@@ -13,8 +13,8 @@ function App() {
     <NotesList/> */}
 
     <Note />
-    {/* <Addnote /> */}
-     
+    {/* <Addnote />
+      */}
     </div>
     </Provider>
   );

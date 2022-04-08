@@ -1,63 +1,67 @@
-// import React from 'react'
-// import { connect } from 'react-redux'
-// import postNoteInfo from '../redux/Note/noteActions';
-// //import { useNavigate } from 'react-router-dom';
-// //import './postt.css'
+import React from 'react'
+import { connect } from 'react-redux'
+import {postNoteInfo} from '../redux/Note/noteAction';
+import { MdDeleteForever, MdSave } from 'react-icons/md';
+//import { useNavigate } from 'react-router-dom';
+//import './postt.css'
 
 
-// function Addnote (props) {
+function Addnote (props) {
     
-//   const {id, text,date,email } = props.note;
+  const {id, text,date} = props.note;
+   var tdate;
+  const saving =() =>{
 
-// //   let navigate = useNavigate()
+    var today = new Date()
+    tdate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+    console.log("todffay",tdate)
+     
+    props.postNoteInfo()
+  }
 
-// //   const navi = () => {
-// //     props.postNoteInfo()
-// //     navigate('/')
-// //   }
-
-//     return (
-//         <div>
+    return (
+        <div>
             
-                
-//             <h2>add note content</h2><br/>
-//             {/* <label className='adder'>Name : </label>
-//             <input type="text" className='adder' id='name'/><br/>
-//             <label className='adder'>Phone : </label>
-//             <input type="phone" className='adder' id='phone'/><br/>
-//      */}     <span>    </span>
+            
+            <h2>add note content</h2><br/>
+            <div className='note'>
+                <span><textarea id="snote"
+                rows='8'
+				cols='20'
+				placeholder='Type to add a note...'>
+                    </textarea></span>
+                <div className='note-footer'>
+                        <small><input type="text" value={tdate} id="adddate"></input></small>
+                        <button id="sav.btn" onClick={saving}>btn</button>
+                </div>
+            </div>
 
-//             {/* <label className='adder'>Email : </label>
-//             <input type="email" className='adder' id='email'/><br/>
+        </div>
+    )
+}
 
-//             <button id="write" onClick={navi}>Add Note</button> */}
-         
-//         </div>
-//     )
-// }
+const mapStateToProps = state => {
+    return{
+        note: state.noteInfo.note
+    }
+}
 
-// const mapStateToProps = state => {
-//     return{
-//         note: state.noteInfo.note
-//     }
-// }
+const mapDispatchToProps = dispatch => {
+    return{
+        postNoteInfo : () => {
 
-// const mapDispatchToProps = dispatch => {
-//     return{
-//         postNoteInfo : () => {
+            const note = {
+                text: document.getElementById('snote').value,
+                date: document.getElementById("adddate").value,
+                username: "vk",
+            };
 
-//             const note = {
-//                 name: document.getElementById('name').value,
-//                 phone: document.getElementById('phone').value,
-//                 email: document.getElementById('email').value,
-//             };
+            dispatch(postNoteInfo(note))
+        }
+    }
+}
 
-//             dispatch(postNoteInfo(note))
-//         }
-//     }
-// }
-
-// export default connect(
-//     mapStateToProps,
-//     mapDispatchToProps
-// )(Addnote)
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Addnote)
