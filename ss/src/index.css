@@ -12,19 +12,19 @@ code {
 		'Courier New', monospace;
 }
 
-.header {
+/* .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
+} */
 
-.dark-mode {
+/* .dark-mode {
 	background-color: black;
 }
 
 .dark-mode h1 {
 	color: white;
-}
+} */
 
 .container {
 	max-width: 960px;
@@ -53,6 +53,7 @@ textarea {
 	resize: none;
 	background-color: #67d7cc;
 	
+	
 }
 
 textarea:focus {
@@ -76,12 +77,14 @@ textarea:focus {
 	border-radius: 10px;
 	padding: 1rem;
 	min-height: 170px;
-	display: flex;
-  width:170px;
-	flex-direction: column;
-  margin:10px;
+	display:flex;
+    width:170px;
+	flex-direction:column;
+    margin:10px;
 	justify-content: space-between;
 	white-space: pre-wrap;
+	position: relative;
+
 }
 
 .note-footer {
@@ -114,4 +117,18 @@ textarea:focus {
 }
 input{
  display: none;
+}
+
+button a{
+             
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+svg{
+	width: 15px;
+}
+.spn{
+	word-wrap:break-word;
+
 }

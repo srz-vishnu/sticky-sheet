@@ -12,3 +12,9 @@ export const getNoteInfo = () => {
     }
   }
   
+  export const delNoteInfo  = (note) => {
+    return{
+        type: "DEL_NOTE_INFO",
+        payload: note,
+    }
+  }
