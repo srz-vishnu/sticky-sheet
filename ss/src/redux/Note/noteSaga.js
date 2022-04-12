@@ -16,7 +16,7 @@ function* getNoteSaga(){
     //  yield delay(4000)
     const response = yield call(fetchNoteData);
     console.log("...saga",response.data);
-    yield put({type :"GET_NOTE_INFO_SUCCESS", noteInfo : response.data }  )
+    yield put({type :"GET_NOTE_INFO_SUCCESS", noteInfo : response.data } )
 }
 
 
@@ -47,5 +47,4 @@ export function* watchNoteContainer(){
     yield takeEvery("GET_NOTE_INFO",getNoteSaga)
      yield takeEvery("POST_NOTE_INFO", postNoteSaga)
      yield takeEvery("DEL_NOTE_INFO",delNoteSaga)
-
 }

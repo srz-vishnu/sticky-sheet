@@ -84,7 +84,6 @@ textarea:focus {
 	justify-content: space-between;
 	white-space: pre-wrap;
 	position: relative;
-
 }
 
 .note-footer {
@@ -125,10 +124,10 @@ button a{
 	background-color: rgba(255, 255, 255, 0);
 }
 
+
 svg{
 	width: 15px;
 }
 .spn{
 	word-wrap:break-word;
-
 }
