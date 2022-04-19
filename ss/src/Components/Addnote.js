@@ -9,7 +9,7 @@ import { MdDeleteForever, MdSave } from 'react-icons/md';
 
 function Addnote (props) {
     
-  const {id, text,date} = props.note;
+  const {id, text,date,username} = props.note;
    var tdate;
    var today = new Date()
    tdate = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();

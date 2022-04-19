@@ -42,9 +42,20 @@ function* delNoteSaga (action) {
     catch (e) { console.log('error',e) }
 }
 
+function* updNoteSaga (action) {
+  try{
+      const udata = action.payload;
+      const res = yield call(axios.put,"http://localhost:8000/notes/"+udata.id,udata);      
+      console.log("output", res)
+      yield put({type:"GET_NOTE_INFO"});
+    }
+    catch (e) { console.log('error',e) }
+}
+
 
 export function* watchNoteContainer(){
     yield takeEvery("GET_NOTE_INFO",getNoteSaga)
      yield takeEvery("POST_NOTE_INFO", postNoteSaga)
      yield takeEvery("DEL_NOTE_INFO",delNoteSaga)
+     yield takeEvery("UPD_NOTE_INFO",updNoteSaga)
 }

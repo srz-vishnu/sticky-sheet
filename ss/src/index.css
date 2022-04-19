@@ -51,9 +51,7 @@ code {
 textarea {
 	border: none;
 	resize: none;
-	background-color: #67d7cc;
-	
-	
+	background-color:#67d7cc00;
 }
 
 textarea:focus {
@@ -130,4 +128,16 @@ svg{
 }
 .spn{
 	word-wrap:break-word;
+	height: 150px;
+	overflow:auto;
+	/* border: none;
+	resize: none;
+	background-color: #fef68a;
+	 */
+}
+h2{
+	font-size: 15px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-decoration:underline;
+	color:black;
 }

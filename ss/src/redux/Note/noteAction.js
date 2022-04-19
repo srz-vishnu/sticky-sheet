@@ -18,3 +18,11 @@ export const getNoteInfo = () => {
         payload: note,
     }
   }
+
+  export const updNoteInfo  = (note) => {
+    return{
+        type: "UPD_NOTE_INFO",
+        payload: note,
+    }
+  }
+  
