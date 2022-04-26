@@ -48,7 +48,7 @@ function Addnote (props) {
                 <div className='note-footer'>
                         
                         <small>{characterLimit - noteText.length} Remaining
-                        <input type="text" value={tdate} id="adddate"></input></small>
+                        <input type="text" className='inptype' value={tdate} id="adddate"></input></small>
                         <button id="sav.btn" onClick={saving}>save</button>
                 </div>
             </div>

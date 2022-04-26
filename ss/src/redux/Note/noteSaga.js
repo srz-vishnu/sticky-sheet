@@ -53,6 +53,7 @@ function* updNoteSaga (action) {
 }
 
 
+
 export function* watchNoteContainer(){
     yield takeEvery("GET_NOTE_INFO",getNoteSaga)
      yield takeEvery("POST_NOTE_INFO", postNoteSaga)

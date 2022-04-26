@@ -1,5 +1,5 @@
 const initialState = {
-    note: []
+    note: [],
   }
   
   const noteReducer = (state = initialState, action) => {

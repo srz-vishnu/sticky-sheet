@@ -25,4 +25,5 @@ export const getNoteInfo = () => {
         payload: note,
     }
   }
-  
+
+

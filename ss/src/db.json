@@ -13,10 +13,30 @@
       "username": "vk"
     },
     {
-      "text": "bbbb\nll\nll",
-      "date": "19/4/2022",
+      "text": "its working",
+      "date": "25/4/2022",
       "id": 5,
       "username": "vk"
+    }
+  ],
+  "user": [
+    {
+      "email": "vk@gmail.com",
+      "username": "vk",
+      "password": "vkvk",
+      "id": 1
+    },
+    {
+      "username": "deeps",
+      "email": "deepthi@gmail.com",
+      "password": "deepthi",
+      "id": 2
+    },
+    {
+      "username": "ajith",
+      "email": "ajith@gmail.com",
+      "password": "aji",
+      "id": 3
     }
   ]
 }
