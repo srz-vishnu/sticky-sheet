@@ -3,8 +3,7 @@ import { connect } from 'react-redux'
 import {postNoteInfo} from '../redux/Note/noteAction';
 import { useState } from 'react';
 import { MdDeleteForever, MdSave } from 'react-icons/md';
-//import { useNavigate } from 'react-router-dom';
-//import './postt.css'
+
 
 
 function Addnote (props) {
