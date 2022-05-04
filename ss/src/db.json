@@ -37,6 +37,18 @@
       "email": "ajith@gmail.com",
       "password": "aji",
       "id": 3
+    },
+    {
+      "username": "vk",
+      "email": "vishnukrajan08@gmail.com",
+      "password": "1243",
+      "id": 4
+    },
+    {
+      "username": "vk",
+      "email": "vk",
+      "password": "1243",
+      "id": 5
     }
   ]
 }

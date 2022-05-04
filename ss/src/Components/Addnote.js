@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {postNoteInfo} from '../redux/Note/noteAction';
 import { useState } from 'react';
-import { MdDeleteForever, MdSave } from 'react-icons/md';
 
 
 
