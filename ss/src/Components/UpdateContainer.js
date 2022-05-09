@@ -29,7 +29,7 @@ function UpdateContainer (props) {
         navigate('/')        
     }
     const handleC=(e)=>{
-        const name=e.target.name //textarea name
+        const name=e.target.name //textarea name ,name is used in here
         setUpdate
         (
             {

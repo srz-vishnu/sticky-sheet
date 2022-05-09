@@ -21,11 +21,6 @@ function Signup(props) {
      navigate('/login')
   }
 
-    // let navigate = useNavigate()
-    // const Register= () => {
-    //     props.postUserInfo()
-    //     navigate('/login')
-    // }
 
 return(
 

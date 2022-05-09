@@ -49,6 +49,12 @@
       "email": "vk",
       "password": "1243",
       "id": 5
+    },
+    {
+      "username": "vishnu",
+      "email": "vishnukrajan08@gmail.com",
+      "password": "1234",
+      "id": 6
     }
   ]
 }
